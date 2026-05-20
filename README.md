@@ -1,10 +1,10 @@
-# 🦾 Autonomous Colour-Sorting Robotic Arm
+#  Autonomous Colour-Sorting Robotic Arm
 
 A cognitive robotics project built in **Webots** simulation, where a **UR5 robotic arm** autonomously sorts objects by colour using a **YOLOv8** perception model, a **Decision Tree** classifier, and an **adaptive confidence threshold** mechanism.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 The robot follows a **sense → think → act** loop:
 1. **Perceives** an object via camera using YOLOv8 (detects colour: red, blue, or yellow)
@@ -15,7 +15,7 @@ The system also **self-regulates** its confidence threshold over time — raisin
 
 ---
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 autonomous-colour-sorting-arm/
@@ -29,7 +29,7 @@ autonomous-colour-sorting-arm/
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 The pipeline flows through three cognitive modules:
 
@@ -47,7 +47,7 @@ The pipeline flows through three cognitive modules:
 
 ---
 
-## ⚙️ Adaptive Threshold Mechanism
+##  Adaptive Threshold Mechanism
 
 The confidence threshold starts at **0.75** and adjusts automatically:
 
@@ -57,7 +57,7 @@ The confidence threshold starts at **0.75** and adjusts automatically:
 
 ---
 
-## 🔁 State Machine
+##  State Machine
 
 The robot cycles through 4 states per object:
 
@@ -71,7 +71,7 @@ INSPECT → MOVE_TO_BUTTON → PRESS_BUTTON → RETURN
 
 
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - **Pick & place** — physically move objects into colour-coded bins instead of pressing buttons
 - **9-class model** — split by colour + shape (e.g. red_circle, blue_square, yellow_cylinder)
